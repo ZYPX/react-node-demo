@@ -1,0 +1,186 @@
+
+.flexContainer {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.product{
+    position: relative;
+    width: 350px;
+    height: 500px;
+    display: inline-block;
+    background-color: #35374E;
+    border-radius: 10pt;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+.productData {
+    width: 90%;
+    height: 34%;
+    position: absolute;
+    padding-left: 10px;
+    bottom: 0;
+    background-color: #35374E;
+}
+
+.productText {
+    font-size: 14pt;
+    background-color: #35374E;
+}
+
+.productImage {
+    margin-top: 10px;
+    width: 100%;
+}
+
+
+.productLink {
+    margin-top: 10px;
+    font-size: 12pt;
+    background-color: #35374E;
+}
+
+.sizeSelection {
+    margin-bottom: 30px;
+    background-color: #35374E;
+    
+}
+
+.sizeSelection select{
+    background-color: #35374E;
+    width:120px;
+    height: 30px;
+    text-align: center;
+}
+
+
+.sizeSelection div, .sizeSelection label{
+    background-color: #35374E;
+}
+
+.sizeSelection input{
+    border-radius: 10%;
+    width:100px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.sizeSelection input:hover{
+    background-color: #6B9FFF;
+    transition: 0.5s;
+}
+
+* {
+    color: white;
+}
+
+.refLink {
+    display: inline-block;
+    position: relative;
+    color: white;
+    background-color: #35374E;
+    border-radius: 10px;
+}
+
+.refLink:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.refLink:hover:after {
+transform: scaleX(1);
+transform-origin: bottom left;
+}
+
+select {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+    border-radius: 10px;
+    height: 30px;
+    
+}
+
+input {
+    border-radius: 10%;
+    width:100px;
+    height: 30px;
+    cursor: pointer;
+}
+
+input:hover {
+    background-color: #6B9FFF;
+}
+
+form div {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+#snk {
+    width: 200px;
+    height: 100px;
+    display:block;
+    margin:auto;
+    border-radius: 0px;
+}
+
+@media screen and (max-width: 760px) {
+
+    .product{
+        position: relative;
+        display: inline-block;
+        background-color: #35374E;
+        border-radius: 10pt;
+        padding: 10px;
+        margin: 40px;
+        text-align: center;
+    }
+    
+    .productData {
+        position: absolute;
+        bottom: 0;
+        height: 40%;
+    }
+
+    .productImage {
+        height: 43%;
+    }
+
+    select {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 20px;
+        border-radius: 10px;
+        height: 30px;
+        
+    }
+
+    form div {
+        display: block;
+    }
+
+}

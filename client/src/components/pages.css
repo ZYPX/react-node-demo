@@ -1,0 +1,124 @@
+
+.container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20pt;
+}
+
+.info {
+    margin-top: 20px;
+    width: 80%;
+    
+}
+
+p {
+    font-size: 16pt;
+}
+
+.bodyText {
+    max-width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.pageUL {
+    width: 70%;
+    display: inline-block;
+    background-color: #35374E;
+    border-radius: 10pt;
+    list-style: inside;
+}
+
+
+.pointItem, .point{
+    width: 70%;
+    display: inline-block;
+    background-color: #35374E;
+    border-radius: 10pt;
+    padding: 10px;
+}
+
+.point {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.pageLI {
+    margin:20px;
+    color: white;
+    max-width: 100%;
+    padding: 5px;
+    background-color: #35374E;
+    border-radius: 5pt;
+}
+
+hr {
+    width: 80%;
+}
+
+img {
+    max-width: 70%;
+    max-height: 50%;
+    border-radius: 20px;
+}
+
+* {
+    color: white;
+}
+
+.refLink {
+    display: inline-block;
+    position: relative;
+    color: white;
+    
+    background-color: #35374E;
+    border-radius: 10px;
+}
+
+.refLink:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.refLink:hover:after {
+transform: scaleX(1);
+transform-origin: bottom left;
+}
+
+@media screen and (max-width: 375px) {
+
+    .container {
+        font-size: 10pt;
+    }
+    .info, .pageUL, .point, .bodyText{
+        width: 100%;
+    }
+
+    .bodyImage {
+        height: auto;
+        min-width: 100%
+    }
+
+    .bodyText p{
+        font-size: 12pt;
+    }
+
+    
+
+}

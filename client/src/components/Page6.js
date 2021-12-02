@@ -6,8 +6,8 @@ const Page6 = () => {
             <h2>Credits</h2>
             <div className="point">
                 <p className="pointItem">Created by Zachary Chen</p>
-                <p className="pointItem">Student Number: 500833799</p>
-                <p className="pointItem">Email: zachary.chen@ryerson.ca</p>
+                <p className="pointItem">Student Number: [REDACTED]</p>
+                <p className="pointItem">Email: [REDACTED]</p>
                 <p className="pointItem">View on github: <a className="refLink" href="https://github.com/ZYPX/react-node-demo">Click Here!</a></p>
             </div>
             <br/>
